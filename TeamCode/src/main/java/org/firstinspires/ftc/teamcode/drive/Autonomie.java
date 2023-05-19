@@ -62,6 +62,7 @@ public class Autonomie extends LinearOpMode{
         waitForStart();
         reset();
         cleste.setPosition(0.6);
+
         sleep(1000);
         actionarSlider(1150);
         drive.followTrajectorySequence(startStack);
