@@ -50,12 +50,12 @@ public class Autonomie extends LinearOpMode{
 
 
 
-        //mergem spre primu bat
+        
         TrajectorySequence startStack = drive.trajectorySequenceBuilder(startPose)
                 .strafeTo(new Vector2d(-32.87,-45),
                         SampleMecanumDrive.getVelocityConstraint(40, DriveConstants.MAX_ANG_VEL, DriveConstants.TRACK_WIDTH),
                         SampleMecanumDrive.getAccelerationConstraint(DriveConstants.MAX_ACCEL))//47.244
-                .turn(0)
+                .lineToConstantHeading(new Posde2d(-30.68, -10.26, Math.toRadians(180))
                 .build();
 
 
